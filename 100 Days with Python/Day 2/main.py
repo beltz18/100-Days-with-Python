@@ -1,19 +1,24 @@
-# Operaciones básicas
-# Operaciones básicas
-string   = "Hello World"
-integer  = 25
-floating = 1.8
+cadena = input("...")
 
-# Operaciones aritméticas básicas
-print(integer+floating)
-print(integer-floating)
-print(integer*floating)
-print(integer/floating)
-print(integer**floating)
+match cadena:
+  case "hola":
+    print("hola, ¿qué tal?")
+  case "adios":
+    print("adios :C")
+  case _:
+    print(":D")
 
-# Concatenación de cadenas
-print(string+str(integer))
-print(string+str(floating))
+var = {
+  0: "Algo",
+  "algo": 0,
+  "nada": "nada"
+}
 
-# Repetición de una cadena
-print(string*integer)
+print(var["algo"])
+print(var["nada"])
+print(var[0])
+print(var[1])
+
+error = "no existe"
+cond = var.get(4, error)
+print(cond)
