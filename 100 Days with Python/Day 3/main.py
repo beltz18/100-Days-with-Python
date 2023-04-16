@@ -1,3 +1,4 @@
+# Loader
 from time import sleep
 from tqdm import tqdm
 
@@ -5,6 +6,7 @@ for i in tqdm(range(100)):
   sleep(.1)
 print("Success :D")
 
+# List Comprehensions
 cars = [
   "Audi",
   "Volkswagen",
