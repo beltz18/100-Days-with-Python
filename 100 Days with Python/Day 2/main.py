@@ -1,3 +1,4 @@
+# get method
 cadena = input("...")
 
 match cadena:
